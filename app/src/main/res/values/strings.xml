@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">RestCountries</string>
+    <string name="update_button">ОБНОВИТЬ</string>
+    <string name="country_name">Название страны</string>
+    <string name="time_zone">Таймзона</string>
+    <string name="currency">Валюта</string>
+    <string name="capital">Столица</string>
+    <string name="back">Назад</string>
+    <string name="flag">Флаг</string>
+    <string name="no_data">Отсутствует</string>
+    <string name="all_countries">Все страны</string>
+</resources>
