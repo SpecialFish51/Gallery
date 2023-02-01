@@ -10,7 +10,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:padding="6dp"
-        android:textColor="@color/maroon"
+        android:textColor="@color/black"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/lFlag"
         app:layout_constraintEnd_toEndOf="parent"

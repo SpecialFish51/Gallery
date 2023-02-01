@@ -1,15 +1,11 @@
 [
     {
-        "merged": "com.example.restcountries.app-mergeDebugResources-44:/layout/item_country.xml",
-        "source": "com.example.restcountries.app-main-47:/layout/item_country.xml"
-    },
-    {
         "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-mergeDebugResources-44:\\layout\\item_country.xml",
         "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-main-47:\\layout\\item_country.xml"
     },
     {
-        "merged": "com.example.restcountries.app-mergeDebugResources-44:/layout/activity_main.xml",
-        "source": "com.example.restcountries.app-main-47:/layout/activity_main.xml"
+        "merged": "com.example.restcountries.app-mergeDebugResources-44:/layout/fragment_country_detail.xml",
+        "source": "com.example.restcountries.app-main-47:/layout/fragment_country_detail.xml"
     },
     {
         "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-mergeDebugResources-44:\\layout\\fragment_country_detail.xml",

@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.restcountries.R
-import com.example.restcountries.app.data.api.model.CountryModel
+import com.example.restcountries.app.data.domain.CountryModel
 import com.example.restcountries.databinding.FragmentCountryDetailBinding
 import com.squareup.picasso.Picasso
 
@@ -39,16 +39,16 @@ class CountryDetailFragment : Fragment() {
         countryModel?.let { country ->
             binding.apply {
                 lCountryName.text = country.name
-                lCapital.text = country.capital ?: getString(R.string.no_data)
-                lCurrency.text = country.currencies?.let { list ->
+                lCapital.text = country.capital.ifBlank { getString(R.string.no_data) }
+                lCurrency.text = country.currencies.let { list ->
                     list.joinToString { currency ->
-                        currency?.name + (", " + currency?.code) + (", " + currency?.symbol)
+                        currency.name + (", " + currency.code) + (", " + currency.symbol)
                     }
-                } ?: getString(R.string.no_data)
-                lTimeZone.text = country.timeZones?.joinToString { timezone ->
-                    timezone ?: getString(R.string.no_data)
-                } ?: getString(R.string.no_data)
-                Picasso.get().load(countryModel.flags?.png)
+                }
+                lTimeZone.text = country.timeZones.joinToString { timezone ->
+                    timezone
+                }
+                Picasso.get().load(countryModel.flags.png)
                     .noPlaceholder()
                     .into(lFlag)
             }

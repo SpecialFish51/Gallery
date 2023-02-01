@@ -1,11 +1,8 @@
 package com.example.restcountries.app.data.api.model
 
-import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
-import kotlinx.parcelize.Parcelize
 
-@Parcelize
-data class CountryModel(
+data class Country(
     @SerializedName("name")
     val name: String?,
     @SerializedName("region")
@@ -13,28 +10,27 @@ data class CountryModel(
     @SerializedName("capital")
     val capital: String?,
     @SerializedName("timezones")
-    val timeZones: List<String?>?,
+    val timeZones: List<String>?,
     @SerializedName("flags")
-    val flags: FlagModel?,
+    val flags: Flag?,
     @SerializedName("currencies")
-    val currencies: List<CurrencyModel?>?
-) : Parcelable
+    val currencies: List<Currency?>?,
+    val position: Int
+)
 
-@Parcelize
-data class CurrencyModel(
+data class Currency(
     @SerializedName("name")
     val name: String?,
     @SerializedName("code")
     val code: String?,
     @SerializedName("symbol")
     val symbol: String?
-) : Parcelable
+)
 
-@Parcelize
-data class FlagModel(
+data class Flag(
     @SerializedName("svg")
     val svg: String,
     @SerializedName("png")
     val png: String
-) : Parcelable
+)
 

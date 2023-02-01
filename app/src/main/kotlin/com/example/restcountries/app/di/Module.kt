@@ -4,6 +4,7 @@ import com.example.restcountries.app.data.api.CountriesApi
 import com.example.restcountries.app.data.repo.CountriesRepo
 import com.example.restcountries.app.data.repo.CountriesRepoImpl
 import com.example.restcountries.app.fragment.countries.CountriesViewModel
+import com.google.gson.Gson
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import org.koin.androidx.viewmodel.dsl.viewModel
@@ -35,7 +36,14 @@ val appModule = module {
     }
 
     single<CountriesRepo> {
-        CountriesRepoImpl(get())
+        CountriesRepoImpl(
+            countriesApi = get(),
+            gson = get()
+        )
+    }
+
+    single{
+        Gson()
     }
 
     viewModel {

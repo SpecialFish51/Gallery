@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Nikolay\\.gradle\\caches\\transforms-3\\53edefe15d403f8467620aa121e38059\\transformed\\material-1.7.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\Nikolay\\.gradle\\caches\\transforms-3\\0d291c9371dfbedda11ea76171717f69\\transformed\\material-1.8.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12,13,14",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
