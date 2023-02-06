@@ -1,95 +1,54 @@
-package com.example.pixabaytt.app.fragment.countries
+package com.example.pixabaytt.app.fragment.categories
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
-import com.example.pixabaytt.app.data.domain.CountryModel
-import com.example.pixabaytt.app.fragment.countries.adapter.CountriesAdapter
-import com.example.pixabaytt.app.utils.SwipeHelper
 import com.example.pixabaytt.R
-import com.example.pixabaytt.databinding.FragmentCountriesBinding
-import com.google.android.material.snackbar.Snackbar
-import kotlinx.coroutines.flow.launchIn
-import kotlinx.coroutines.flow.onEach
+import com.example.pixabaytt.app.fragment.categories.adapter.CategoriesAdapter
+import com.example.pixabaytt.app.utils.dpToPx
+import com.example.pixabaytt.databinding.FragmentCategoriesBinding
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
+class CategoriesFragment : Fragment() {
+    private lateinit var binding: FragmentCategoriesBinding
 
-class CountriesFragment : Fragment() {
-    private lateinit var binding: FragmentCountriesBinding
+    private val viewModel by viewModel<CategoriesViewModel>()
 
-    private val viewModel by viewModel<CountriesViewModel>()
+    companion object {
+        const val CATEGORY = "CATEGORY"
+    }
 
-    private val adapter = CountriesAdapter {
+    private val categoriesAdapter = CategoriesAdapter {
         val bundle = Bundle()
-        bundle.putParcelable("CountryModel", it)
-        findNavController().navigate(R.id.action_countriesFragment_to_countryDetailFragment, bundle)
+        bundle.putString(CATEGORY, it.name)
+        findNavController().navigate(R.id.action_categoriesFragment_to_imagesFragment, bundle)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        viewModel.apply {
-            error.observe(viewLifecycleOwner) { errorMessage ->
-                showError(errorMessage)
-            }
-            loading.observe(viewLifecycleOwner) { isLoading ->
-                showLoading(isLoading)
-            }
-            notFound.observe(viewLifecycleOwner) { isNotFound ->
-                showIfFounded(isNotFound)
-            }
-            isEmpty.observe(viewLifecycleOwner) { empty ->
-                showPageLoad(empty)
-            }
-            countries.onEach { countriesList ->
-                showCountriesList(countriesList)
-            }.launchIn(viewLifecycleOwner.lifecycleScope)
 
-            getCountries()
+
+        binding.countriesRecycler.apply {
+            adapter = categoriesAdapter
+            val margin = requireContext().dpToPx(8)
+            addItemDecoration(
+                SimpleItemDecorator(
+                    0, margin, 0, margin
+                )
+            )
+
         }
-        binding.button.setOnClickListener { viewModel.getCountries() }
-
-
-        SwipeHelper { position ->
-            viewModel.onItemDelete(position)
-        }.attachToRecyclerView(binding.countriesRecycler)
-
-        binding.countriesRecycler.adapter = adapter
-
+        categoriesAdapter.items = viewModel.setDataToAdapter()
     }
-
 
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View {
-        binding = FragmentCountriesBinding.inflate(inflater, container, false)
+        binding = FragmentCategoriesBinding.inflate(inflater, container, false)
         return binding.root
-
-    }
-
-    private fun showError(error: String) {
-        Snackbar.make(binding.root, error, Snackbar.LENGTH_LONG).show()
-    }
-
-    private fun showLoading(isLoading: Boolean) = with(binding) {
-        progressBar.visibility = if (isLoading) View.VISIBLE else View.GONE
-    }
-
-    private fun showIfFounded(notFound: String) {
-        Snackbar.make(binding.root, notFound, Snackbar.LENGTH_LONG).show()
-    }
-
-    private fun showPageLoad(empty: String) {
-        Snackbar.make(binding.root, empty, Snackbar.LENGTH_LONG).show()
-    }
-
-    private fun showCountriesList(countries: List<CountryModel>) {
-        adapter.items = countries
     }
 }

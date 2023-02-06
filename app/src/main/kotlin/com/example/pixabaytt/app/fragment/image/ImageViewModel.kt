@@ -1,40 +1,39 @@
-package com.example.pixabaytt.app.fragment.images
+package com.example.pixabaytt.app.fragment.image
 
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.pixabaytt.app.data.api.model.CategoryType
-import com.example.pixabaytt.app.data.domain.ResponseModel
-import com.example.pixabaytt.app.data.repo.CountriesRepo
+import com.example.pixabaytt.app.data.domain.ImagesInfoModel
+import com.example.pixabaytt.app.data.repo.ImagesRepo
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.launch
 
-class ImagesViewModel(private val imagesRepo: CountriesRepo,
-                      categoryType: String) : ViewModel() {
+class ImageViewModel(private val imagesRepo: ImagesRepo,
+                     id: Int) : ViewModel() {
 
-    val images = MutableStateFlow(ResponseModel(0, 0, emptyList()))
+    val image = MutableStateFlow<ImagesInfoModel?>(null)
     val isEmpty = MutableLiveData<String>()
     val error = MutableLiveData<String>()
     val loading = MutableLiveData<Boolean>()
     val notFound = MutableLiveData<String>()
 
     init {
-        getImages(categoryType)
+        getImagesById(id)
     }
 
 
-    fun getImages(categoryName: String) {
+    fun getImagesById(id: Int) {
         viewModelScope.launch {
-            imagesRepo.getImagesByCategory(
-                categoryType = CategoryType.valueOf(categoryName)
+            imagesRepo.getImagesById(
+                id = id
             ).onSuccess { items ->
-                    images.value = items
+                    image.value = items.images.firstOrNull()
                 }.onFailure {
                     Log.d("api error",it.message?: "")
                     error.value = (it.message + it.cause?.message)
                     loading.value = false
-                }
+            }
         }
     }
 }

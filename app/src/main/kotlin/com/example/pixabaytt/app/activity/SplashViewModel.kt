@@ -1,4 +1,4 @@
-package com.example.restcountries.app.activity
+package com.example.pixabaytt.app.activity
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -9,9 +9,9 @@ import kotlinx.coroutines.launch
 class SplashViewModel : ViewModel() {
     var progressCount: MutableLiveData<Int> = MutableLiveData(0)
 
-    fun initSplashScreen() {
+    fun launchViewModelScope() {
         viewModelScope.launch {
-            delay(50)
+            delay(30)
             updateLiveData()
         }
     }

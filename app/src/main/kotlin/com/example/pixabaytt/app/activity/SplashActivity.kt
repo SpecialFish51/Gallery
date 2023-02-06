@@ -1,11 +1,13 @@
-package com.example.restcountries.app.activity
+package com.example.pixabaytt.app.activity
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.restcountries.databinding.ActivitySplashBinding
+import com.example.pixabaytt.databinding.ActivitySplashBinding
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
+@SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySplashBinding
@@ -22,15 +24,15 @@ class SplashActivity : AppCompatActivity() {
             }
         }
 
-        viewModel.initSplashScreen()
+        viewModel.launchViewModelScope()
     }
 
     private fun setSplashCount(progressCount: Int) = with(binding) {
-        if (progressCount > 99) {
-            startActivity(Intent(applicationContext, MainActivity::class.java))
+        if (progressCount == 100) {
+            startActivity(Intent(this@SplashActivity, MainActivity::class.java))
             finish()
         } else {
-            viewModel.initSplashScreen()
+            viewModel.launchViewModelScope()
         }
 
         progressBar.progress = progressCount

@@ -1,12 +1,28 @@
 <resources>
-    <string name="app_name">RestCountries</string>
-    <string name="update_button">ОБНОВИТЬ</string>
-    <string name="country_name">Название страны</string>
-    <string name="time_zone">Таймзона</string>
-    <string name="currency">Валюта</string>
-    <string name="capital">Столица</string>
+    <string name="app_name">Pixabay</string>
     <string name="back">Назад</string>
-    <string name="flag">Флаг</string>
     <string name="no_data">Отсутствует</string>
-    <string name="all_countries">Все страны</string>
+    <string name="all_categories">Все категории</string>
+    <string name="all_images">Все изображения</string>
+    <string name="background_title">Бэкграунд</string>
+    <string name="fashion_title">Мода</string>
+    <string name="nature_title">Природа</string>
+    <string name="science_title">Наука</string>
+     <string name="education_title">Обучение</string>
+    <string name="feelings_title">Чувства</string>
+     <string name="health_title">Здоровье</string>
+    <string name="people_title">Люди</string>
+     <string name="religion_title">Религия</string>
+    <string name="places_title">Места</string>
+     <string name="animals_title">Животные</string>
+    <string name="industry_title">Производство</string>
+     <string name="computer_title">Компьютеры</string>
+    <string name="food_title">Еда</string>
+     <string name="sports_title">Спорт</string>
+    <string name="transportation_title">Транспорт</string>
+     <string name="travel_title">Путешествия</string>
+    <string name="buildings_title">Строения</string>
+     <string name="business_title">Бизнес</string>
+    <string name="music_title">Музыка</string>
+    <string name="set_wallpaper">Установить на рабочий экран</string>
 </resources>

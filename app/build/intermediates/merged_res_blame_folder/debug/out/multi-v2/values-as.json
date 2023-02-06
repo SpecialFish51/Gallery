@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.restcountries.app-mergeDebugResources-43:/values-as/values-as.xml",
+            "outputFile": "com.example.pixabaytt.app-mergeDebugResources-43:/values-as/values-as.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Nikolay\\.gradle\\caches\\transforms-3\\f3889f18d4f26e70cef4e17d11226053\\transformed\\core-1.9.0\\res\\values-as\\values-as.xml",

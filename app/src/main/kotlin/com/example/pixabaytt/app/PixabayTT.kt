@@ -1,7 +1,7 @@
-package com.example.restcountries.app
+package com.example.pixabaytt.app
 
 import android.app.Application
-import com.example.restcountries.app.fragment.di.appModule
+import com.example.pixabaytt.app.di.appModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
