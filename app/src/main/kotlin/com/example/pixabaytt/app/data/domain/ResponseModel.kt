@@ -1,4 +1,8 @@
 package com.example.pixabaytt.app.data.domain
 
-class ResponseModel {
-}
+data class ResponseModel(
+    val total: Int,
+    val totalHits: Int,
+    val images: List<ImagesInfoModel>
+)
+

@@ -1,4 +1,4 @@
-package com.example.restcountries.app.base
+package com.example.pixabaytt.app.base
 
 import com.google.gson.Gson
 
@@ -11,7 +11,7 @@ abstract class BaseApiUseCase(
     ): Result<T> = safeApiCall(gson, apiCall)
 
 
-    suspend fun <T> safeApiCall(gson: Gson, apiCall: suspend () -> T): Result<T> = runCatching {
+    private suspend fun <T> safeApiCall(gson: Gson, apiCall: suspend () -> T): Result<T> = runCatching {
         apiCall()
     }.matchToDomainErrorIfNeeded(gson)
 

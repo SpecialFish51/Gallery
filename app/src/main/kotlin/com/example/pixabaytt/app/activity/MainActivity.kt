@@ -1,12 +1,12 @@
-package com.example.restcountries.app.activity
+package com.example.pixabaytt.app.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupWithNavController
-import com.example.restcountries.R
-import com.example.restcountries.databinding.ActivityMainBinding
+import com.example.pixabaytt.R
+import com.example.pixabaytt.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding

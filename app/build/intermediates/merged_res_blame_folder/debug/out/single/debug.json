@@ -1,86 +1,130 @@
 [
     {
-        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-merged_res-45:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-main-47:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-merged_res-45:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-main-47:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-merged_res-45:\\drawable_ic_no_flag.xml.flat",
-        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-main-47:\\drawable\\ic_no_flag.xml"
+        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-merged_res-45:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-main-47:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-merged_res-45:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-main-47:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-merged_res-45:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-main-47:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-merged_res-45:\\layout_fragment_country_detail.xml.flat",
-        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-main-47:\\layout\\fragment_country_detail.xml"
+        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-merged_res-45:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-main-47:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-merged_res-45:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-main-47:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-merged_res-45:\\drawable_ic_bin.xml.flat",
+        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-main-47:\\drawable\\ic_bin.xml"
     },
     {
-        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-merged_res-45:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-main-47:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-merged_res-45:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-main-47:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-merged_res-45:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-main-47:\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-merged_res-45:\\drawable_ic_no_flag.xml.flat",
+        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-main-47:\\drawable\\ic_no_flag.xml"
     },
     {
-        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-merged_res-45:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-main-47:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-merged_res-45:\\navigation_nav_graph.xml.flat",
+        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-main-47:\\navigation\\nav_graph.xml"
     },
     {
-        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-merged_res-45:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-main-47:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-merged_res-45:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-main-47:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-merged_res-45:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-main-47:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-merged_res-45:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-main-47:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-merged_res-45:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-pngs-40:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-merged_res-45:\\drawable_ic_pixabay_logo.xml.flat",
+        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-main-47:\\drawable\\ic_pixabay_logo.xml"
     },
     {
-        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-merged_res-45:\\layout_fragment_countries.xml.flat",
-        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-main-47:\\layout\\fragment_countries.xml"
+        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-merged_res-45:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-main-47:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-merged_res-45:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-main-47:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-merged_res-45:\\drawable_ic_no_image.xml.flat",
+        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-main-47:\\drawable\\ic_no_image.xml"
     },
     {
-        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-merged_res-45:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-main-47:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-merged_res-45:\\layout_fragment_images.xml.flat",
+        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-main-47:\\layout\\fragment_images.xml"
     },
     {
-        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-merged_res-45:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-main-47:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-merged_res-45:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-main-47:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-merged_res-45:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-main-47:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-merged_res-45:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-main-47:\\layout\\activity_splash.xml"
     },
     {
-        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-merged_res-45:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-main-47:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "com.example.pixabaytt.app-merged_res-45:/layout_fragment_categories.xml.flat",
+        "source": "com.example.pixabaytt.app-main-47:/layout/fragment_categories.xml"
     },
     {
-        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-merged_res-45:\\layout_item_country.xml.flat",
-        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-main-47:\\layout\\item_country.xml"
+        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-merged_res-45:\\layout_item_image.xml.flat",
+        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-main-47:\\layout\\item_image.xml"
     },
     {
-        "merged": "com.example.restcountries.app-merged_res-45:/layout_fragment_country_detail.xml.flat",
-        "source": "com.example.restcountries.app-main-47:/layout/fragment_country_detail.xml"
+        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-merged_res-45:\\drawable_myrect.xml.flat",
+        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-main-47:\\drawable\\myrect.xml"
     },
     {
-        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-merged_res-45:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-main-47:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "com.example.pixabaytt.app-merged_res-45:/layout_item_image.xml.flat",
+        "source": "com.example.pixabaytt.app-main-47:/layout/item_image.xml"
     },
     {
-        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-merged_res-45:\\navigation_nav_graph.xml.flat",
-        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.restcountries.app-main-47:\\navigation\\nav_graph.xml"
+        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-merged_res-45:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-main-47:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-merged_res-45:\\layout_item_category.xml.flat",
+        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-main-47:\\layout\\item_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-merged_res-45:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-main-47:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-merged_res-45:\\font_kirilica_font.otf.flat",
+        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-main-47:\\font\\kirilica_font.otf"
+    },
+    {
+        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-merged_res-45:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-main-47:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-merged_res-45:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-main-47:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-merged_res-45:\\font_avangard_font.ttf.flat",
+        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-main-47:\\font\\avangard_font.ttf"
+    },
+    {
+        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-merged_res-45:\\layout_fragment_categories.xml.flat",
+        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-main-47:\\layout\\fragment_categories.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-merged_res-45:\\font_dvarven_font.otf.flat",
+        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-main-47:\\font\\dvarven_font.otf"
+    },
+    {
+        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-merged_res-45:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-main-47:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-merged_res-45:\\layout_fragment_image.xml.flat",
+        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-main-47:\\layout\\fragment_image.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-merged_res-45:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Nikolay\\.gradle\\daemon\\7.4\\com.example.pixabaytt.app-pngs-40:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     }
 ]

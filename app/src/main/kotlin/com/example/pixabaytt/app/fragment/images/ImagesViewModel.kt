@@ -1,43 +1,53 @@
-package com.example.pixabaytt.app.fragment.categories
+package com.example.pixabaytt.app.fragment.images
 
+import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.pixabaytt.app.data.api.model.CategoryType
-import com.example.pixabaytt.app.data.domain.ImagesModel
-import com.example.pixabaytt.app.data.repo.CountriesRepo
+import com.example.pixabaytt.app.data.domain.ResponseModel
+import com.example.pixabaytt.app.data.repo.ImagesRepo
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.launch
 
-class CountriesViewModel(private val imagesRepo: CountriesRepo) : ViewModel() {
+class ImagesViewModel(
+    private val imagesRepo: ImagesRepo, private val categoryType: String
+) : ViewModel() {
 
-    val countries = MutableStateFlow<List<ImagesModel>>(emptyList())
+    val images = MutableStateFlow(ResponseModel(0, 0, emptyList()))
     val isEmpty = MutableLiveData<String>()
     val error = MutableLiveData<String>()
     val loading = MutableLiveData<Boolean>()
     val notFound = MutableLiveData<String>()
 
+    var value = MutableStateFlow(1)
 
-    fun getImages(category: CategoryType) {
+    init {
+        getImages(value.value++)
+    }
+
+
+    private fun getImages(page: Int) {
         viewModelScope.launch {
-            imagesRepo.getImagesByCategory(categoryType = category).onSuccess { items ->
-
-
+            loading.value = true
+            imagesRepo.getImagesByCategory(
+                page = page, categoryType = CategoryType.valueOf(categoryType)
+            ).onSuccess { items ->
+                loading.value = false
+                images.value = ResponseModel(
+                    items.total, items.totalHits, images.value.images + items.images
+                )
             }.onFailure {
-                error.value =
-                    it.message ?: "Ошибка загрузки"
+                Log.d("api error", it.message ?: "")
+                error.value = (it.message + it.cause?.message)
                 loading.value = false
             }
         }
     }
 
-    fun onItemDelete(position: Int) {
-        viewModelScope.launch {
-            val items = countries.value.filterIndexed { index, countryModel ->
-                index != position
-            }
-            countries.emit(items)
-        }
+    fun getNewPage() {
+        val value = value.value ++
+        getImages(value)
     }
 }
 

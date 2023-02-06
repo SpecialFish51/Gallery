@@ -1,108 +1,128 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.example.restcountries"
+3    package="com.example.pixabaytt"
 4    android:versionCode="1"
 5    android:versionName="1.0" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="21"
-8-->C:\Users\Nikolay\AndroidStudioProjects\RestCountries2\app\src\main\AndroidManifest.xml
+8        android:minSdkVersion="23"
+8-->C:\Users\Nikolay\AndroidStudioProjects\Gallery\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="33" />
-9-->C:\Users\Nikolay\AndroidStudioProjects\RestCountries2\app\src\main\AndroidManifest.xml
+9-->C:\Users\Nikolay\AndroidStudioProjects\Gallery\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\Nikolay\AndroidStudioProjects\RestCountries2\app\src\main\AndroidManifest.xml:4:5-66
-11-->C:\Users\Nikolay\AndroidStudioProjects\RestCountries2\app\src\main\AndroidManifest.xml:4:22-64
-12
-13    <permission
-13-->[androidx.core:core:1.9.0] C:\Users\Nikolay\.gradle\caches\transforms-3\f3889f18d4f26e70cef4e17d11226053\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
-14        android:name="com.example.restcountries.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-14-->[androidx.core:core:1.9.0] C:\Users\Nikolay\.gradle\caches\transforms-3\f3889f18d4f26e70cef4e17d11226053\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
-15        android:protectionLevel="signature" />
-15-->[androidx.core:core:1.9.0] C:\Users\Nikolay\.gradle\caches\transforms-3\f3889f18d4f26e70cef4e17d11226053\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
-16
-17    <uses-permission android:name="com.example.restcountries.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-17-->[androidx.core:core:1.9.0] C:\Users\Nikolay\.gradle\caches\transforms-3\f3889f18d4f26e70cef4e17d11226053\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
-17-->[androidx.core:core:1.9.0] C:\Users\Nikolay\.gradle\caches\transforms-3\f3889f18d4f26e70cef4e17d11226053\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
-18
-19    <application
-19-->C:\Users\Nikolay\AndroidStudioProjects\RestCountries2\app\src\main\AndroidManifest.xml:6:5-22:19
-20        android:name="com.example.restcountries.app.CountriesApplication"
-20-->C:\Users\Nikolay\AndroidStudioProjects\RestCountries2\app\src\main\AndroidManifest.xml:7:9-49
-21        android:allowBackup="true"
-21-->C:\Users\Nikolay\AndroidStudioProjects\RestCountries2\app\src\main\AndroidManifest.xml:8:9-35
-22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-22-->[androidx.core:core:1.9.0] C:\Users\Nikolay\.gradle\caches\transforms-3\f3889f18d4f26e70cef4e17d11226053\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
-23        android:debuggable="true"
-24        android:icon="@mipmap/ic_launcher"
-24-->C:\Users\Nikolay\AndroidStudioProjects\RestCountries2\app\src\main\AndroidManifest.xml:9:9-43
-25        android:label="@string/app_name"
-25-->C:\Users\Nikolay\AndroidStudioProjects\RestCountries2\app\src\main\AndroidManifest.xml:10:9-41
-26        android:roundIcon="@mipmap/ic_launcher_round"
-26-->C:\Users\Nikolay\AndroidStudioProjects\RestCountries2\app\src\main\AndroidManifest.xml:11:9-54
-27        android:testOnly="true"
-28        android:theme="@style/Theme.RestCountries" >
-28-->C:\Users\Nikolay\AndroidStudioProjects\RestCountries2\app\src\main\AndroidManifest.xml:12:9-51
-29        <activity
-29-->C:\Users\Nikolay\AndroidStudioProjects\RestCountries2\app\src\main\AndroidManifest.xml:13:9-21:20
-30            android:name="com.example.restcountries.app.activity.MainActivity"
-30-->C:\Users\Nikolay\AndroidStudioProjects\RestCountries2\app\src\main\AndroidManifest.xml:14:13-54
-31            android:exported="true" >
-31-->C:\Users\Nikolay\AndroidStudioProjects\RestCountries2\app\src\main\AndroidManifest.xml:15:13-36
-32            <intent-filter>
-32-->C:\Users\Nikolay\AndroidStudioProjects\RestCountries2\app\src\main\AndroidManifest.xml:16:13-20:29
-33                <action android:name="android.intent.action.MAIN" />
-33-->C:\Users\Nikolay\AndroidStudioProjects\RestCountries2\app\src\main\AndroidManifest.xml:17:17-69
-33-->C:\Users\Nikolay\AndroidStudioProjects\RestCountries2\app\src\main\AndroidManifest.xml:17:25-66
-34
-35                <category android:name="android.intent.category.LAUNCHER" />
-35-->C:\Users\Nikolay\AndroidStudioProjects\RestCountries2\app\src\main\AndroidManifest.xml:19:17-77
-35-->C:\Users\Nikolay\AndroidStudioProjects\RestCountries2\app\src\main\AndroidManifest.xml:19:27-74
-36            </intent-filter>
-37        </activity>
-38
-39        <uses-library
-39-->[androidx.window:window:1.0.0] C:\Users\Nikolay\.gradle\caches\transforms-3\e65b8465f5bac02dec998c398cfe1021\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
-40            android:name="androidx.window.extensions"
-40-->[androidx.window:window:1.0.0] C:\Users\Nikolay\.gradle\caches\transforms-3\e65b8465f5bac02dec998c398cfe1021\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
-41            android:required="false" />
-41-->[androidx.window:window:1.0.0] C:\Users\Nikolay\.gradle\caches\transforms-3\e65b8465f5bac02dec998c398cfe1021\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
-42        <uses-library
-42-->[androidx.window:window:1.0.0] C:\Users\Nikolay\.gradle\caches\transforms-3\e65b8465f5bac02dec998c398cfe1021\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
-43            android:name="androidx.window.sidecar"
-43-->[androidx.window:window:1.0.0] C:\Users\Nikolay\.gradle\caches\transforms-3\e65b8465f5bac02dec998c398cfe1021\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
-44            android:required="false" />
-44-->[androidx.window:window:1.0.0] C:\Users\Nikolay\.gradle\caches\transforms-3\e65b8465f5bac02dec998c398cfe1021\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
-45
-46        <provider
-46-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Nikolay\.gradle\caches\transforms-3\412372332f980a5c4ef0364c55a99af0\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-47            android:name="androidx.startup.InitializationProvider"
-47-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Nikolay\.gradle\caches\transforms-3\412372332f980a5c4ef0364c55a99af0\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-48            android:authorities="com.example.restcountries.androidx-startup"
-48-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Nikolay\.gradle\caches\transforms-3\412372332f980a5c4ef0364c55a99af0\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-49            android:exported="false" >
-49-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Nikolay\.gradle\caches\transforms-3\412372332f980a5c4ef0364c55a99af0\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-50            <meta-data
-50-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Nikolay\.gradle\caches\transforms-3\412372332f980a5c4ef0364c55a99af0\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-51                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-51-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Nikolay\.gradle\caches\transforms-3\412372332f980a5c4ef0364c55a99af0\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-52                android:value="androidx.startup" />
-52-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Nikolay\.gradle\caches\transforms-3\412372332f980a5c4ef0364c55a99af0\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-53            <meta-data
-53-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Nikolay\.gradle\caches\transforms-3\a8199b6bb025d711471524267dd78014\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-54                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-54-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Nikolay\.gradle\caches\transforms-3\a8199b6bb025d711471524267dd78014\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-55                android:value="androidx.startup" />
-55-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Nikolay\.gradle\caches\transforms-3\a8199b6bb025d711471524267dd78014\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-56        </provider>
-57        <provider
-57-->[com.squareup.picasso:picasso:2.8] C:\Users\Nikolay\.gradle\caches\transforms-3\5a1c4b97a85ec170b891604c93406514\transformed\picasso-2.8\AndroidManifest.xml:8:9-11:40
-58            android:name="com.squareup.picasso.PicassoProvider"
-58-->[com.squareup.picasso:picasso:2.8] C:\Users\Nikolay\.gradle\caches\transforms-3\5a1c4b97a85ec170b891604c93406514\transformed\picasso-2.8\AndroidManifest.xml:9:13-64
-59            android:authorities="com.example.restcountries.com.squareup.picasso"
-59-->[com.squareup.picasso:picasso:2.8] C:\Users\Nikolay\.gradle\caches\transforms-3\5a1c4b97a85ec170b891604c93406514\transformed\picasso-2.8\AndroidManifest.xml:10:13-72
-60            android:exported="false" />
-60-->[com.squareup.picasso:picasso:2.8] C:\Users\Nikolay\.gradle\caches\transforms-3\5a1c4b97a85ec170b891604c93406514\transformed\picasso-2.8\AndroidManifest.xml:11:13-37
-61    </application>
-62
-63</manifest>
+11-->C:\Users\Nikolay\AndroidStudioProjects\Gallery\app\src\main\AndroidManifest.xml:4:5-66
+11-->C:\Users\Nikolay\AndroidStudioProjects\Gallery\app\src\main\AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+12-->C:\Users\Nikolay\AndroidStudioProjects\Gallery\app\src\main\AndroidManifest.xml:5:5-71
+12-->C:\Users\Nikolay\AndroidStudioProjects\Gallery\app\src\main\AndroidManifest.xml:5:22-69
+13
+14    <permission
+14-->[androidx.core:core:1.9.0] C:\Users\Nikolay\.gradle\caches\transforms-3\f3889f18d4f26e70cef4e17d11226053\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+15        android:name="com.example.pixabaytt.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+15-->[androidx.core:core:1.9.0] C:\Users\Nikolay\.gradle\caches\transforms-3\f3889f18d4f26e70cef4e17d11226053\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+16        android:protectionLevel="signature" />
+16-->[androidx.core:core:1.9.0] C:\Users\Nikolay\.gradle\caches\transforms-3\f3889f18d4f26e70cef4e17d11226053\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+17
+18    <uses-permission android:name="com.example.pixabaytt.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+18-->[androidx.core:core:1.9.0] C:\Users\Nikolay\.gradle\caches\transforms-3\f3889f18d4f26e70cef4e17d11226053\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+18-->[androidx.core:core:1.9.0] C:\Users\Nikolay\.gradle\caches\transforms-3\f3889f18d4f26e70cef4e17d11226053\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+19
+20    <application
+20-->C:\Users\Nikolay\AndroidStudioProjects\Gallery\app\src\main\AndroidManifest.xml:7:5-33:19
+21        android:name="com.example.pixabaytt.app.PixabayTT"
+21-->C:\Users\Nikolay\AndroidStudioProjects\Gallery\app\src\main\AndroidManifest.xml:8:9-59
+22        android:allowBackup="true"
+22-->C:\Users\Nikolay\AndroidStudioProjects\Gallery\app\src\main\AndroidManifest.xml:9:9-35
+23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+23-->[androidx.core:core:1.9.0] C:\Users\Nikolay\.gradle\caches\transforms-3\f3889f18d4f26e70cef4e17d11226053\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+24        android:debuggable="true"
+25        android:extractNativeLibs="false"
+26        android:icon="@mipmap/ic_launcher"
+26-->C:\Users\Nikolay\AndroidStudioProjects\Gallery\app\src\main\AndroidManifest.xml:10:9-43
+27        android:label="@string/app_name"
+27-->C:\Users\Nikolay\AndroidStudioProjects\Gallery\app\src\main\AndroidManifest.xml:11:9-41
+28        android:roundIcon="@mipmap/ic_launcher_round"
+28-->C:\Users\Nikolay\AndroidStudioProjects\Gallery\app\src\main\AndroidManifest.xml:12:9-54
+29        android:testOnly="true"
+30        android:theme="@style/SplashScreenTheme"
+30-->C:\Users\Nikolay\AndroidStudioProjects\Gallery\app\src\main\AndroidManifest.xml:13:9-49
+31        android:usesCleartextTraffic="true" >
+31-->C:\Users\Nikolay\AndroidStudioProjects\Gallery\app\src\main\AndroidManifest.xml:14:9-44
+32        <activity
+32-->C:\Users\Nikolay\AndroidStudioProjects\Gallery\app\src\main\AndroidManifest.xml:15:9-25:20
+33            android:name="com.example.pixabaytt.app.activity.SplashActivity"
+33-->C:\Users\Nikolay\AndroidStudioProjects\Gallery\app\src\main\AndroidManifest.xml:16:13-77
+34            android:exported="true"
+34-->C:\Users\Nikolay\AndroidStudioProjects\Gallery\app\src\main\AndroidManifest.xml:17:13-36
+35            android:theme="@style/SplashScreenTheme" >
+35-->C:\Users\Nikolay\AndroidStudioProjects\Gallery\app\src\main\AndroidManifest.xml:18:13-53
+36            <intent-filter>
+36-->C:\Users\Nikolay\AndroidStudioProjects\Gallery\app\src\main\AndroidManifest.xml:19:13-24:29
+37                <action android:name="android.intent.action.MAIN" />
+37-->C:\Users\Nikolay\AndroidStudioProjects\Gallery\app\src\main\AndroidManifest.xml:20:17-69
+37-->C:\Users\Nikolay\AndroidStudioProjects\Gallery\app\src\main\AndroidManifest.xml:20:25-66
+38                <action android:name="android.intent.action.VIEW" />
+38-->C:\Users\Nikolay\AndroidStudioProjects\Gallery\app\src\main\AndroidManifest.xml:21:17-68
+38-->C:\Users\Nikolay\AndroidStudioProjects\Gallery\app\src\main\AndroidManifest.xml:21:25-66
+39
+40                <category android:name="android.intent.category.LAUNCHER" />
+40-->C:\Users\Nikolay\AndroidStudioProjects\Gallery\app\src\main\AndroidManifest.xml:23:17-77
+40-->C:\Users\Nikolay\AndroidStudioProjects\Gallery\app\src\main\AndroidManifest.xml:23:27-74
+41            </intent-filter>
+42        </activity>
+43        <activity
+43-->C:\Users\Nikolay\AndroidStudioProjects\Gallery\app\src\main\AndroidManifest.xml:27:9-32:20
+44            android:name="com.example.pixabaytt.app.activity.MainActivity"
+44-->C:\Users\Nikolay\AndroidStudioProjects\Gallery\app\src\main\AndroidManifest.xml:28:13-75
+45            android:exported="true"
+45-->C:\Users\Nikolay\AndroidStudioProjects\Gallery\app\src\main\AndroidManifest.xml:30:13-36
+46            android:theme="@style/Theme.Pixabay" >
+46-->C:\Users\Nikolay\AndroidStudioProjects\Gallery\app\src\main\AndroidManifest.xml:29:13-49
+47        </activity>
+48
+49        <uses-library
+49-->[androidx.window:window:1.0.0] C:\Users\Nikolay\.gradle\caches\transforms-3\e65b8465f5bac02dec998c398cfe1021\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+50            android:name="androidx.window.extensions"
+50-->[androidx.window:window:1.0.0] C:\Users\Nikolay\.gradle\caches\transforms-3\e65b8465f5bac02dec998c398cfe1021\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+51            android:required="false" />
+51-->[androidx.window:window:1.0.0] C:\Users\Nikolay\.gradle\caches\transforms-3\e65b8465f5bac02dec998c398cfe1021\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+52        <uses-library
+52-->[androidx.window:window:1.0.0] C:\Users\Nikolay\.gradle\caches\transforms-3\e65b8465f5bac02dec998c398cfe1021\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+53            android:name="androidx.window.sidecar"
+53-->[androidx.window:window:1.0.0] C:\Users\Nikolay\.gradle\caches\transforms-3\e65b8465f5bac02dec998c398cfe1021\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+54            android:required="false" />
+54-->[androidx.window:window:1.0.0] C:\Users\Nikolay\.gradle\caches\transforms-3\e65b8465f5bac02dec998c398cfe1021\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+55
+56        <provider
+56-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Nikolay\.gradle\caches\transforms-3\412372332f980a5c4ef0364c55a99af0\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+57            android:name="androidx.startup.InitializationProvider"
+57-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Nikolay\.gradle\caches\transforms-3\412372332f980a5c4ef0364c55a99af0\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+58            android:authorities="com.example.pixabaytt.androidx-startup"
+58-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Nikolay\.gradle\caches\transforms-3\412372332f980a5c4ef0364c55a99af0\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+59            android:exported="false" >
+59-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Nikolay\.gradle\caches\transforms-3\412372332f980a5c4ef0364c55a99af0\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+60            <meta-data
+60-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Nikolay\.gradle\caches\transforms-3\412372332f980a5c4ef0364c55a99af0\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+61                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+61-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Nikolay\.gradle\caches\transforms-3\412372332f980a5c4ef0364c55a99af0\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+62                android:value="androidx.startup" />
+62-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Nikolay\.gradle\caches\transforms-3\412372332f980a5c4ef0364c55a99af0\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+63            <meta-data
+63-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Nikolay\.gradle\caches\transforms-3\a8199b6bb025d711471524267dd78014\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+64                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+64-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Nikolay\.gradle\caches\transforms-3\a8199b6bb025d711471524267dd78014\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+65                android:value="androidx.startup" />
+65-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Nikolay\.gradle\caches\transforms-3\a8199b6bb025d711471524267dd78014\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+66        </provider>
+67        <provider
+67-->[com.squareup.picasso:picasso:2.8] C:\Users\Nikolay\.gradle\caches\transforms-3\5a1c4b97a85ec170b891604c93406514\transformed\picasso-2.8\AndroidManifest.xml:8:9-11:40
+68            android:name="com.squareup.picasso.PicassoProvider"
+68-->[com.squareup.picasso:picasso:2.8] C:\Users\Nikolay\.gradle\caches\transforms-3\5a1c4b97a85ec170b891604c93406514\transformed\picasso-2.8\AndroidManifest.xml:9:13-64
+69            android:authorities="com.example.pixabaytt.com.squareup.picasso"
+69-->[com.squareup.picasso:picasso:2.8] C:\Users\Nikolay\.gradle\caches\transforms-3\5a1c4b97a85ec170b891604c93406514\transformed\picasso-2.8\AndroidManifest.xml:10:13-72
+70            android:exported="false" />
+70-->[com.squareup.picasso:picasso:2.8] C:\Users\Nikolay\.gradle\caches\transforms-3\5a1c4b97a85ec170b891604c93406514\transformed\picasso-2.8\AndroidManifest.xml:11:13-37
+71    </application>
+72
+73</manifest>
