@@ -1,4 +1,4 @@
-package com.example.pixabaytt.app.base
+package com.example.restcountries.app.base
 
 import com.google.gson.Gson
 

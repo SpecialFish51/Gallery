@@ -1,4 +1,4 @@
-package com.example.restcountries.app.data.domain
+package com.example.pixabaytt.app.data.domain
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

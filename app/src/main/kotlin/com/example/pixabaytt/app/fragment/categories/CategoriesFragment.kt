@@ -10,8 +10,8 @@ import androidx.navigation.fragment.findNavController
 import com.example.pixabaytt.app.data.domain.CountryModel
 import com.example.pixabaytt.app.fragment.countries.adapter.CountriesAdapter
 import com.example.pixabaytt.app.utils.SwipeHelper
-import com.example.restcountries.R
-import com.example.restcountries.databinding.FragmentCountriesBinding
+import com.example.pixabaytt.R
+import com.example.pixabaytt.databinding.FragmentCountriesBinding
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach

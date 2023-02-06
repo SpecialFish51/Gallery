@@ -1,27 +1,28 @@
-package com.example.pixabaytt.app.fragment.countries
+package com.example.pixabaytt.app.fragment.categories
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.pixabaytt.app.data.domain.CountryModel
+import com.example.pixabaytt.app.data.api.model.CategoryType
+import com.example.pixabaytt.app.data.domain.ImagesModel
 import com.example.pixabaytt.app.data.repo.CountriesRepo
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.launch
 
-class CountriesViewModel(private val countriesRepo: CountriesRepo) : ViewModel() {
+class CountriesViewModel(private val imagesRepo: CountriesRepo) : ViewModel() {
 
-    val countries = MutableStateFlow<List<CountryModel>>(emptyList())
+    val countries = MutableStateFlow<List<ImagesModel>>(emptyList())
     val isEmpty = MutableLiveData<String>()
     val error = MutableLiveData<String>()
     val loading = MutableLiveData<Boolean>()
     val notFound = MutableLiveData<String>()
 
 
-    fun getCountries() {
+    fun getImages(category: CategoryType) {
         viewModelScope.launch {
-            countriesRepo.getAllCountries().onSuccess { items ->
-                countries.emit(items)
-                loading.value = false
+            imagesRepo.getImagesByCategory(categoryType = category).onSuccess { items ->
+
+
             }.onFailure {
                 error.value =
                     it.message ?: "Ошибка загрузки"

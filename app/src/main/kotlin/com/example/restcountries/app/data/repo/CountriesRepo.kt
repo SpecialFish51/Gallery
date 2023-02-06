@@ -1,13 +1,13 @@
-package com.example.restcountries.app.data.repo
+package com.example.pixabaytt.app.data.repo
 
-import com.example.restcountries.app.base.BaseApiUseCase
-import com.example.restcountries.app.data.api.CountriesApi
-import com.example.restcountries.app.data.api.model.Country
-import com.example.restcountries.app.data.api.model.Currency
-import com.example.restcountries.app.data.api.model.Flag
-import com.example.restcountries.app.data.domain.CountryModel
-import com.example.restcountries.app.data.domain.CurrencyModel
-import com.example.restcountries.app.data.domain.FlagModel
+import com.example.pixabaytt.app.base.BaseApiUseCase
+import com.example.pixabaytt.app.data.api.CountriesApi
+import com.example.pixabaytt.app.data.api.model.Country
+import com.example.pixabaytt.app.data.api.model.Currency
+import com.example.pixabaytt.app.data.api.model.Flag
+import com.example.pixabaytt.app.data.domain.CountryModel
+import com.example.pixabaytt.app.data.domain.CurrencyModel
+import com.example.pixabaytt.app.data.domain.FlagModel
 import com.google.gson.Gson
 
 interface CountriesRepo {

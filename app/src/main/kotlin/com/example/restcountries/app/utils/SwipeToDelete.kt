@@ -1,4 +1,4 @@
-package com.example.restcountries.app.utils
+package com.example.pixabaytt.app.utils
 
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView

@@ -1,4 +1,4 @@
-package com.example.pixabaytt.app.activity
+package com.example.restcountries.app.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

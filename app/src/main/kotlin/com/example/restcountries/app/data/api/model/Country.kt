@@ -1,4 +1,4 @@
-package com.example.restcountries.app.data.api.model
+package com.example.pixabaytt.app.data.api.model
 
 import com.google.gson.annotations.SerializedName
 

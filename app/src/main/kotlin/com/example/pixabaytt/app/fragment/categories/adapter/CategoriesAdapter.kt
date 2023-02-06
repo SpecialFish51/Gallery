@@ -7,8 +7,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.pixabaytt.app.data.domain.CountryModel
 import com.example.pixabaytt.app.utils.FlagSize.FLAG_HEIGHT
 import com.example.pixabaytt.app.utils.FlagSize.FLAG_WIDTH
-import com.example.restcountries.R
-import com.example.restcountries.databinding.ItemCountryBinding
+import com.example.pixabaytt.R
+import com.example.pixabaytt.databinding.ItemCountryBinding
 import com.squareup.picasso.Picasso
 import kotlin.properties.Delegates
 

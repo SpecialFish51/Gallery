@@ -1,6 +1,6 @@
-package com.example.restcountries.app.data.api
+package com.example.pixabaytt.app.data.api
 
-import com.example.restcountries.app.data.api.HttpStatus.NOT_FOUND
+import com.example.pixabaytt.app.data.api.HttpStatus.NOT_FOUND
 import retrofit2.Response
 
 abstract class BaseApiResponse {

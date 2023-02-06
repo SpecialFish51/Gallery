@@ -1,4 +1,4 @@
-package com.example.restcountries.app.utils
+package com.example.pixabaytt.app.utils
 
 object FlagSize {
     const val FLAG_HEIGHT = 150

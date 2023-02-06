@@ -1,17 +1,17 @@
-package com.example.restcountries.app
+package com.example.pixabaytt.app
 
 import android.app.Application
-import com.example.restcountries.app.di.appModule
+import com.example.pixabaytt.app.fragment.di.appModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
 
-class CountriesApplication: Application() {
+class PixabayTT: Application() {
     override fun onCreate() {
         super.onCreate()
         startKoin{
             androidLogger()
-            androidContext(this@CountriesApplication)
+            androidContext(this@PixabayTT)
             modules(listOf(appModule))
         }
     }

@@ -7,9 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.example.pixabaytt.app.data.domain.CountryModel
-import com.example.restcountries.R
-import com.example.restcountries.databinding.FragmentCountryDetailBinding
+import com.example.pixabaytt.app.data.domain.ImagesModel
+import com.example.pixabaytt.R
+import com.example.pixabaytt.databinding.FragmentCountryDetailBinding
 import com.squareup.picasso.Picasso
 
 class CountryDetailFragment : Fragment() {
@@ -29,7 +29,7 @@ class CountryDetailFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val countryModel = if (Build.VERSION.SDK_INT >= 33) {
-            arguments?.getParcelable("CountryModel", CountryModel::class.java)
+            arguments?.getParcelable("CountryModel", ImagesModel::class.java)
         } else {
             arguments?.getParcelable("CountryModel")
         }

@@ -1,4 +1,4 @@
-package com.example.restcountries.app.data.api
+package com.example.pixabaytt.app.data.api
 
 sealed class NetworkResult<T>(
     val data: T? = null,

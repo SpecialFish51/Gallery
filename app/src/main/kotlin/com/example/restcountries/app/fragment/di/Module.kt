@@ -1,9 +1,10 @@
-package com.example.restcountries.app.di
+package com.example.pixabaytt.app.fragment.di
 
-import com.example.restcountries.app.data.api.CountriesApi
-import com.example.restcountries.app.data.repo.CountriesRepo
-import com.example.restcountries.app.data.repo.CountriesRepoImpl
-import com.example.restcountries.app.fragment.countries.CountriesViewModel
+import com.example.pixabaytt.app.activity.SplashViewModel
+import com.example.pixabaytt.app.data.api.CountriesApi
+import com.example.pixabaytt.app.data.repo.CountriesRepo
+import com.example.pixabaytt.app.data.repo.CountriesRepoImpl
+import com.example.pixabaytt.app.fragment.countries.CountriesViewModel
 import com.google.gson.Gson
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -42,11 +43,15 @@ val appModule = module {
         )
     }
 
-    single{
+    single {
         Gson()
     }
 
     viewModel {
-        CountriesViewModel(get())
+        SplashViewModel()
+    }
+
+    viewModel {
+        CountriesViewModel(countriesRepo = get())
     }
 }
